@@ -1,0 +1,5 @@
+ @reference "../assets/styles/tailwindcss.css";
+
+ .app-layout {
+     @apply min-h-dvh bg-white;
+ }

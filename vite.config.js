@@ -4,10 +4,11 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/",
   server: {
     host: "0.0.0.0",
   },
-  plugins: [react(), tailwindcss()],
+  plugins: [tailwindcss(), react()],
   resolve: {
     alias: {
       images: new URL("./src/assets/images", import.meta.url).pathname,
