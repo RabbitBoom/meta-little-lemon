@@ -1,0 +1,5 @@
+ @reference "../../assets/styles/tailwindcss.css";
+
+ .hero-section {
+     @apply aspect-16/9;
+ }
