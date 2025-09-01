@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/meta-little-lemon">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
