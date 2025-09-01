@@ -1,0 +1,11 @@
+@reference "../../assets/styles/tailwindcss.css";
+
+.dialog-body {
+  @apply flex-col w-full py-6 h-[90dvh] fixed z-999 -bottom-1 bg-white rounded-2xl;
+  .dialog-close {
+    @apply absolute top-4 right-4 z-1 text-gray-500 cursor-pointer;
+  }
+  .dialog-content-wrap {
+    @apply flex-1 overflow-hidden overflow-y-scroll;
+  }
+}

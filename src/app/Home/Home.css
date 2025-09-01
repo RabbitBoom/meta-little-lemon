@@ -1,0 +1,12 @@
+ @reference "../../assets/styles/tailwindcss.css";
+
+.meals-item {
+    @apply bg-[#EDEFEE] px-5 text-base py-1 rounded-3xl;
+    &.active {
+        @apply text-white bg-[#F4CE14];
+    }
+}
+
+.food-items {
+    @apply px-4;
+}

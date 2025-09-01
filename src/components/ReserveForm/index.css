@@ -1,0 +1,52 @@
+@reference "../../assets/styles/tailwindcss.css";
+
+.reserve-form {
+  @apply h-full flex flex-col flex-1 items-center px-4;
+  h1 {
+    @apply font-bold text-3xl text-[#F4CE14];
+  }
+  .reserve-steps {
+    @apply flex w-full py-4 mb-4;
+    .reserve-process {
+      @apply h-2 bg-[#EE9972] mr-4 rounded-sm;
+    }
+    &::after {
+      content: "";
+      @apply flex-1 bg-[#EE9972]/40  rounded-sm;
+    }
+  }
+  .reserve-form-wrap {
+    @apply w-full flex-1 overflow-y-scroll;
+  }
+  form {
+    @apply w-full flex flex-col;
+  }
+  .form-item {
+    @apply flex flex-col flex-1 mb-4;
+    label {
+      @apply font-semibold text-lg mb-3;
+    }
+  }
+  .form-item-wrap {
+    @apply flex flex-col;
+    input {
+      @apply border-1 p-2 rounded-md;
+    }
+    button {
+      @apply px-5 py-2 border-1 rounded-3xl;
+    }
+    .radio-group {
+      @apply flex space-x-5;
+    }
+  }
+  .form-item-error {
+    @apply py-2 text-red-500;
+  }
+  .form-submit {
+    @apply border-1 border-[#F4CE14] rounded-3xl py-2 mt-3 mb-5 text-xl;
+  }
+}
+
+.submit-success {
+  @apply flex flex-col items-center;
+}

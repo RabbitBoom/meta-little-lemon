@@ -1,5 +1,26 @@
- @reference "../../assets/styles/tailwindcss.css";
+@reference "../../assets/styles/tailwindcss.css";
 
- .hero-section {
-     @apply aspect-16/9;
- }
+.hero-section {
+  @apply flex flex-col justify-center aspect-16/18 bg-[#495E57] px-4 pb-8 sm:aspect-16/9;
+  h1 {
+    @apply text-5xl/16 text-[#F4CE14];
+  }
+  h2 {
+    @apply text-white text-2xl mb-8;
+  }
+}
+
+.hero-desc {
+  @apply flex;
+  > img {
+    @apply w-36 h-fit ml-2 rounded-2xl;
+  }
+}
+
+.hero-info {
+  @apply flex-1 mb-8 text-white text-xl;
+}
+
+.hero-button {
+  @apply w-fit py-2 px-4 bg-[#F4CE14] rounded-md;
+}
